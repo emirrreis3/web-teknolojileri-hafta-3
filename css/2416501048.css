@@ -1,0 +1,327 @@
+/* Emir Demir — 2416501048 */
+
+:root {
+  --no: 2416501048;
+  --ton: 328;
+  --renk-ana: hsl(var(--ton) 65% 38%);
+  --renk-zemin: hsl(var(--ton) 30% 97%);
+  --font: system-ui, sans-serif;
+  --bosluk-m: 1rem; 
+  --kose: 8px;
+  
+  --renk-metin: #222222;
+  --renk-kart: #ffffff;
+  --renk-hata: #d32f2f;
+  --renk-basari: #2e7d32;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: var(--font); 
+  background-color: #e2e8f0;
+  color: var(--renk-metin);
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Telefon ekranı çerçevesi */
+.uygulama-cercevesi {
+  background-color: var(--renk-zemin);
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: var(--kose);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding-bottom: var(--bosluk-m);
+}
+
+/* === HEADER VE MENÜ === */
+header {
+  background-color: var(--renk-ana);
+  padding: var(--bosluk-m);
+  margin-bottom: var(--bosluk-m);
+}
+
+header h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.35rem;
+  color: #ffffff !important;
+}
+
+/* Menü */
+nav.nav-menu {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+nav.nav-menu a,
+nav.nav-menu a:link,
+nav.nav-menu a:visited,
+nav.nav-menu a:hover,
+nav.nav-menu a:active {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+nav.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+nav.nav-menu .ayrac {
+  margin: 0 0.25rem;
+  opacity: 0.9;
+}
+
+/* Ana İçerik Alanı */
+main {
+  padding: 0 var(--bosluk-m);
+}
+
+p.aciklama {
+  margin: 0 0 var(--bosluk-m) 0;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem 0;
+  font-weight: bold;
+}
+
+/* === FİLTRE VE ARAMA (SPRINT 3) === */
+.filtre {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.filtre label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.filtre input[type="search"],
+.filtre select {
+  margin-top: 0.2rem;
+  padding: 0.45rem 0.6rem;
+}
+
+#sonuc {
+  font-size: 0.85rem;
+  color: #555555;
+  margin: 0 0 var(--bosluk-m) 0;
+  font-style: italic;
+}
+
+/* === KARTLAR === */
+section.etkinlik-listesi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: var(--bosluk-m);
+}
+
+article.kart {
+  background-color: var(--renk-kart);
+  border: 1px solid #d1d5db;
+  border-radius: var(--kose);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+article.kart h2,
+article.kart h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #111827;
+}
+
+article.kart p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+article.kart a.detay-link {
+  color: var(--renk-ana);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.85rem;
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+article.kart a.detay-link:hover {
+  text-decoration: underline;
+}
+
+a.sayfa-link {
+  color: var(--renk-ana);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* === ETKİNLİK DETAY === */
+.detay-konteyner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.afis-kutusu {
+  background-color: #d1fae5;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-radius: var(--kose);
+  color: #065f46;
+  font-size: 0.95rem;
+}
+
+dl.detay-bilgi {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+dl.detay-bilgi dt {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #111827;
+}
+
+dl.detay-bilgi dd {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+/* Buton ve Linkler */
+.buton-guncelle {
+  display: inline-block;
+  background-color: var(--renk-ana);
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: var(--kose);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+/* Hata ve Başarı Kutuları */
+.hata-kutusu {
+  background-color: #fee2e2;
+  border: 1px solid var(--renk-hata);
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: var(--kose);
+  margin-bottom: 1rem;
+}
+
+.basari-kutusu {
+  background-color: #dcfce7;
+  border: 1px solid var(--renk-basari);
+  color: #166534;
+  padding: 1rem;
+  border-radius: var(--kose);
+  margin-top: 1rem;
+}
+
+.basari-kutusu pre {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  margin: 0.5rem 0 0 0;
+  color: #111827;
+}
+
+/* === FORMLAR === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+input, select, textarea {
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+/* Hata Durumu */
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: var(--renk-hata) !important;
+  outline-color: var(--renk-hata);
+}
+
+.alan-hata {
+  color: var(--renk-hata);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  min-height: 1rem;
+  font-weight: 500;
+}
+
+button.form-buton {
+  background-color: var(--renk-ana);
+  color: #ffffff;
+  border: none;
+  padding: 0.65rem;
+  border-radius: var(--kose);
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+/* Masaüstü Düzeni (600px üzeri) */
+@media (min-width: 600px) {
+  .uygulama-cercevesi {
+    max-width: 750px;
+  }
+  
+  .filtre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+
+  .detay-konteyner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlik Ekle - Kampüs Etkinlikleri</title>
+  <link rel="stylesheet" href="css/2416501048.css">
+  <script type="module" src="js/event-form.js"></script>
+</head>
+<body>
+  <div class="uygulama-cercevesi">
+    <header>
+      <h1>Etkinlik Ekle</h1>
+      <nav class="nav-menu">
+        <a href="index.html">Ana Sayfa</a>
+        <span class="ayrac">&middot;</span>
+        <a href="etkinlikler.html">Etkinlikler</a>
+        <span class="ayrac">&middot;</span>
+        <a href="etkinlik-ekle.html">Ekle</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Slayt Adım 9 & 10: novalidate, hata alanları ve mesaj alanı -->
+      <form id="etkinlik-formu" novalidate>
+        <label>
+          Etkinlik adı *
+          <input type="text" name="ad" placeholder="Örn: Kariyer Günleri">
+          <span class="alan-hata" id="ad-hata"></span>
+        </label>
+
+        <label>
+          Kategori *
+          <select name="kategori">
+            <option value="" selected disabled>Seçiniz &boxv;</option>
+            <option value="Seminer">Seminer</option>
+            <option value="Atölye">Atölye</option>
+            <option value="Söyleşi">Söyleşi</option>
+            <option value="Yarışma">Yarışma</option>
+          </select>
+          <span class="alan-hata" id="kategori-hata"></span>
+        </label>
+
+        <label>
+          Tarih (GG-AA-YYYY) *
+          <input type="text" name="tarih" placeholder="Örn: 15-11-2026">
+          <span class="alan-hata" id="tarih-hata"></span>
+        </label>
+
+        <label>
+          Saat (SS:DD) *
+          <input type="text" name="saat" placeholder="Örn: 14:00">
+          <span class="alan-hata" id="saat-hata"></span>
+        </label>
+
+        <label>
+          Yer *
+          <input type="text" name="yer" placeholder="Örn: A Blok Konferans Salonu">
+          <span class="alan-hata" id="yer-hata"></span>
+        </label>
+
+        <label>
+          Kontenjan (1 - 1000)
+          <input type="number" name="kontenjan" placeholder="Örn: 100">
+          <span class="alan-hata" id="kontenjan-hata"></span>
+        </label>
+
+        <label>
+          Açıklama
+          <textarea name="aciklama" rows="3" placeholder="Etkinlik detayları..."></textarea>
+          <span class="alan-hata" id="aciklama-hata"></span>
+        </label>
+
+        <button type="submit" class="form-buton">Kaydet</button>
+      </form>
+
+      <div id="form-mesaj"></div>
+    </main>
+  </div>
+</body>
+</html>
+
