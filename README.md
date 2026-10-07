@@ -8,6 +8,9 @@
 ## Proje Açıklaması
 Bu projede JavaScript ve LocalStorage kullanılarak dinamik bir **Etkinlik Yönetim Sistemi** geliştirilmiştir.
 
+## Vercel Linki
+web-teknolojileri-hafta-3.vercel.app
+
 ### Özellikler:
 * **CRUD Operasyonları:** Etkinlik ekleme, listeleme, güncelleme ve silme.
 * **LocalStorage:** Verilerin tarayıcı hafızasında kalıcı olarak saklanması ve varsayılan başlangıç verileri.
