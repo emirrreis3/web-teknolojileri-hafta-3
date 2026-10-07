@@ -9,7 +9,7 @@
 Bu projede JavaScript ve LocalStorage kullanılarak dinamik bir **Etkinlik Yönetim Sistemi** geliştirilmiştir.
 
 ## Vercel Linki
-[Güncel Vercel Linki](web-teknolojileri-hafta-3.vercel.app)
+[Güncel Vercel Linki](https://web-teknolojileri-hafta-3.vercel.app)
 
 
 ### Özellikler:
